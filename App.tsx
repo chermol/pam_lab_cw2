@@ -1,10 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import DateDisplay from './components/DateDisplay';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Text>Hello world</Text>
+      <Text>{new Date().toLocaleString()}</Text>
+      <DateDisplay />
       <StatusBar style="auto" />
     </View>
   );
