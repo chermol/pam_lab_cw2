@@ -3,6 +3,8 @@ import { StyleSheet, Text, View } from 'react-native';
 import DateDisplay from './components/DateDisplay';
 import MapImage from './components/MapImage';
 import PizzaText from './components/PizzaText';
+import UserName from './components/UserName';
+import UserSurname from './components/UserSurname';
 
 export default function App() {
   return (
@@ -12,6 +14,8 @@ export default function App() {
       <DateDisplay />
       <MapImage />
       <PizzaText />
+      <UserName name="Maciej" />
+      <UserSurname surname="Chermol" />
       <StatusBar style="auto" />
     </View>
   );
